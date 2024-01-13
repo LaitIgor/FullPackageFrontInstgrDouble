@@ -16,10 +16,13 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button";
 import { SignupValidation } from "@/lib/validation"
 import Loader from "../../components/shared/Loader";
+import { createUserAccount } from "@/lib/appwrite/api"
+import { useToast } from "@/components/ui/use-toast"
 
 
 
 const SignUpForm = () => {
+  const { toast } = useToast()
   const isLoading = false;
   const form = useForm<z.infer<typeof SignupValidation>>({
     resolver: zodResolver(SignupValidation),
@@ -33,10 +36,20 @@ const SignUpForm = () => {
  
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof SignupValidation>) {
-    // const newUser = await createUserAccount(values);
+    const newUser = await createUserAccount(values);
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values)
+    console.log(newUser, 'newUser')
+    if (!newUser) {
+      return toast({
+        title: "Sign up failed. Try again",
+      })
+    }
+    // const session = await signInAccount();
+
+
+
   }
   return (
     <Form {...form}>
