@@ -351,27 +351,27 @@ export async function deleteFile(fileId: string) {
 // }
 
 // ============================== LIKE / UNLIKE POST
-// export async function likePost(postId: string, likesArray: string[]) {
-//   try {
-//     const updatedPost = await databases.updateDocument(
-//       appwriteConfig.databaseId,
-//       appwriteConfig.postCollectionId,
-//       postId,
-//       {
-//         likes: likesArray,
-//       }
-//     );
+export async function likePost(postId: string, likesArray: string[]) {
+  try {
+    const updatedPost = await databases.updateDocument(
+      appwriteConfig.databaseId,
+      appwriteConfig.postCollectionId,
+      postId,
+      {
+        likes: likesArray,
+      }
+    );
 
-//     if (!updatedPost) throw Error;
+    if (!updatedPost) throw Error;
 
-//     return updatedPost;
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+    return updatedPost;
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 // ============================== SAVE POST
-export async function savePost(userId: string, postId: string) {
+export async function savePost(postId: string, userId: string, ) {
   try {
     const updatedPost = await databases.createDocument(
       appwriteConfig.databaseId,
