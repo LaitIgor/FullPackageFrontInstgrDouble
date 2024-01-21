@@ -25,7 +25,7 @@ export function formatDateString(dateString: string) {
   return `${formattedDate} at ${time}`;
 }
 
-export function foratDate(createdDate: string): string {
+export function formatDate(createdDate: string): string {
   const currentDate = new Date();
   const postDate = new Date(createdDate);
 

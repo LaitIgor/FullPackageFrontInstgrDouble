@@ -1,5 +1,5 @@
 import { useUserContext } from "@/context/AuthContext"
-import { foratDate } from "@/lib/utils"
+import { formatDate } from "@/lib/utils"
 import { Models } from "appwrite"
 import { Link } from "react-router-dom"
 import PostsStats from "./PostsStats"
@@ -26,7 +26,7 @@ const PostCard = ({ post }: PostCardProps) => {
           <div className="flex flex-col">
             <p className="base-medium lg:body-bold text-light-1">{post.creator.name}</p>
             <div className="flex-center gap-2 text-light-3">
-              <p className="subtle-semibold lg:small-regular">{foratDate(post.$createdAt)}</p>
+              <p className="subtle-semibold lg:small-regular">{formatDate(post.$createdAt)}</p>
               -
               <p className='subtle-semibold lg:small-regular'>{post.location}</p>
             </div>
