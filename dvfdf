@@ -1,0 +1,72 @@
+[33mcommit 02113b2d7644d644d56589a024bfc9d7d0fb6eb5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Sun Jan 21 16:29:51 2024 +0100
+
+    implement postDetails page
+
+[33mcommit 923bf76a7b3adb6c953dd18774671cb42cd1fbf2[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Sun Jan 21 15:22:29 2024 +0100
+
+    finish post create and delete operations. create function for delete
+
+[33mcommit 760f479b875f7456071b884212e834c19646bc78[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Sat Jan 20 18:41:49 2024 +0100
+
+    add posts display feed components, posts like/dislike/delete logic start
+
+[33mcommit 88d1c03bc50006b18d8e733b025980267e71d325[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Fri Jan 19 15:44:17 2024 +0100
+
+    implement post create logic and save to db
+
+[33mcommit 70705e55cdd072a9dd2dae8c7898849c9c2d3f41[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Wed Jan 17 20:40:27 2024 +0100
+
+    add create post form elements + file upload logic + inputs validation
+
+[33mcommit 37e04f4cb6055d5b80da500548a5b889830826a1[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Mon Jan 15 19:33:16 2024 +0100
+
+    add top, side and bottom bars + functionality + routes for each link
+
+[33mcommit 7330f0fa472fb6d918b952452fb265d8bcb3bd33[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Sun Jan 14 21:49:06 2024 +0100
+
+    add react-query, context and finish with sign up and sign in process
+
+[33mcommit 210cf34e2b51f1785f2b8f402c161dfd9a437c4f[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Sat Jan 13 16:16:19 2024 +0100
+
+    add DB variables and user auth and user save functions
+
+[33mcommit 8bdf521b0ac2b0d6e414e954ef3be9068f02b533[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Fri Jan 12 20:43:34 2024 +0100
+
+    create initial routes for sign in, create sign up form, install shadcn
+
+[33mcommit 31c033190cb3f010be5c03d052ec7046b8de68c9[m
+Merge: 6a6881c b30bcbc
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Fri Jan 12 18:54:59 2024 +0100
+
+    resolve readme
+
+[33mcommit 6a6881cddd15acba8367cd3c339bce4fe30582c3[m
+Author: Lait Igor <laitigorofficial@gmail.com>
+Date:   Fri Jan 12 18:50:52 2024 +0100
+
+    front set up, tailwind setup. initial commit
+
+[33mcommit b30bcbcec30ceb1630082fd573736d2a46112fe7[m
+Author: LaitIgor <132578916+LaitIgor@users.noreply.github.com>
+Date:   Fri Jan 12 18:48:11 2024 +0100
+
+    Initial commit
